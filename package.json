@@ -1,0 +1,53 @@
+{
+    "name": "sticky-notes-ext",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "rollup -c",
+        "build:prod": "NODE_ENV=production rollup -c"
+    },
+    "repository": {
+        "url": "git+https://github.com/st0mb1e/sticky-notes-ext.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/st0mb1e/sticky-notes-ext/issues"
+    },
+    "homepage": "https://github.com/st0mb1e/sticky-notes-ext#readme",
+    "devDependencies": {
+        "@babel/preset-env": "7.28.5",
+        "@babel/preset-react": "7.28.5",
+        "@rollup/plugin-babel": "6.1.0",
+        "@rollup/plugin-commonjs": "29.0.0",
+        "@rollup/plugin-node-resolve": "16.0.3",
+        "@rollup/plugin-replace": "6.0.3",
+        "@rollup/plugin-typescript": "12.3.0",
+        "@types/chrome": "0.1.32",
+        "@types/node": "25.0.3",
+        "@types/react": "18.2.0",
+        "@types/react-dom": "18.2.0",
+        "rollup": "4.54.0",
+        "rollup-plugin-copy": "3.5.0",
+        "rollup-plugin-postcss": "4.0.2",
+        "tslib": "2.8.1"
+    },
+    "dependencies": {
+        "@emotion/react": "11.14.0",
+        "@emotion/styled": "11.14.1",
+        "@fontsource/roboto": "5.2.9",
+        "@mui/material": "7.3.6",
+        "@reduxjs/toolkit": "2.11.2",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "react-is": "18.3.1",
+        "react-redux": "9.2.0",
+        "redux-saga": "1.4.2",
+        "typed-redux-saga": "1.5.0"
+    },
+    "overrides": {
+        "react-is": "18.3.1"
+    }
+}
