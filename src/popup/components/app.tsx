@@ -1,4 +1,3 @@
-import React from 'react';
 import { FC } from 'react';
 import { Container, Button } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';

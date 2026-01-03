@@ -15,6 +15,7 @@ const BASE_PLUGINS = [
         extract: true,
         minimize: !isProd,
         sourceMap: !isProd,
+        modules: true,
     }),
     resolve({ browser: true, extensions }),
     commonjs(),
@@ -65,4 +66,16 @@ export default [
             }),
         ],
     },
+    // ### BACKGROUND SERVICE WORKER
+    {
+        input: 'src/background.ts',
+        output: {
+            file: 'dist/assets/background.js',
+            format: 'iife',
+            sourcemap: !isProd,
+        },
+        plugins: [
+            typescript(),
+        ],
+    }
 ];

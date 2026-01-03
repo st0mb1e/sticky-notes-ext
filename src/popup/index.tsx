@@ -8,7 +8,6 @@ import { Provider } from 'react-redux';
 
 import { App } from './components/app';
 import { store } from './store';
-import React from 'react';
 
 const root = createRoot(
     document.getElementById('root')!
