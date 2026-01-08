@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "build": "rollup -c",
-        "build:prod": "NODE_ENV=production rollup -c"
+        "build:prod": "NODE_ENV=production rollup -c",
+        "clean": "rm -rf ./dist"
     },
     "repository": {
         "url": "git+https://github.com/st0mb1e/sticky-notes-ext.git"
@@ -40,6 +41,7 @@
         "@fontsource/roboto": "5.2.9",
         "@mui/material": "7.3.6",
         "@reduxjs/toolkit": "2.11.2",
+        "fast-equals": "6.0.0",
         "react": "18.2.0",
         "react-dom": "18.2.0",
         "react-is": "18.3.1",

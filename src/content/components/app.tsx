@@ -1,8 +1,7 @@
 import { FC } from 'react';
 import { useSelector } from 'react-redux';
 import { css, keyframes } from '@emotion/react';
-
-import { selectIsAddingNote } from '../store/notes';
+import { selectIsAddingNote } from '../../shared/store/notes';
 
 const pulsing = keyframes`
     0%, 100% {

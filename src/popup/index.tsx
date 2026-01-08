@@ -7,8 +7,10 @@ import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 
 import { App } from './components/app';
-import { store } from './store';
+import { createStore } from '../shared/store';
+import { rootSaga } from './store/sagas';
 
+const store = createStore(rootSaga);
 const root = createRoot(
     document.getElementById('root')!
 );

@@ -2,7 +2,10 @@
     "name": "Sticky Notes",
     "manifest_version": 3,
     "version": "1.0.0",
-    "permissions": ["tabs"],
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
     "action": {
         "default_popup": "index.html"
     },

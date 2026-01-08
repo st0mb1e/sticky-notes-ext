@@ -68,14 +68,14 @@ export default [
     },
     // ### BACKGROUND SERVICE WORKER
     {
-        input: 'src/background.ts',
+        input: 'src/service-worker/background.ts',
         output: {
             file: 'dist/assets/background.js',
             format: 'iife',
             sourcemap: !isProd,
         },
         plugins: [
-            typescript(),
+            typescript({ tsconfig: 'src/service-worker/tsconfig.json' }),
         ],
     }
 ];
